@@ -5,7 +5,7 @@ categories:
 date: "2020-10-20T21:28:43-05:00"
 description: ""
 draft: false
-image: pic10.jpg
+image: london.jpg
 keywords: ""
 slug: ipsum
 title: Biography

@@ -27,21 +27,13 @@ Early life Christopher Tranquille grew up in a small town in the Netherlands cal
     </item>
     
     <item>
-      <title>Tempus</title>
-      <link>/blogs/tempus/</link>
-      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
-      
-      <guid>/blogs/tempus/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Magna</title>
+      <title>Youth Risk Behavior Surveillance</title>
       <link>/blogs/magna/</link>
       <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
       
       <guid>/blogs/magna/</guid>
-      <description></description>
+      <description>Every two years, the Centers for Disease Control and Prevention conduct the Youth Risk Behavior Surveillance System (YRBSS) survey, where it takes data from high schoolers (9th through 12th grade), to analyze health patterns. We will work with a selected group of variables from a random sample of observations during one of the years the YRBSS was conducted.
+Load the dataThis data is part of the openintro textbook and we can load and inspect it.</description>
     </item>
     
     <item>
@@ -53,6 +45,15 @@ Early life Christopher Tranquille grew up in a small town in the Netherlands cal
       <description>R MarkdownThis is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see http://rmarkdown.rstudio.com.
 You can embed an R code chunk like this:
 summary(cars)## speed dist ## Min. : 4.0 Min. : 2.00 ## 1st Qu.:12.0 1st Qu.: 26.00 ## Median :15.0 Median : 36.00 ## Mean :15.4 Mean : 42.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/blogs/blog3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/blogs/blog3/</guid>
+      <description></description>
     </item>
     
   </channel>
