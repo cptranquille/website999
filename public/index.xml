@@ -6,7 +6,17 @@
     <description>Recent content on Portfolio Website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 31 Oct 2017 22:42:51 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 20 Oct 2020 21:28:43 -0500</lastBuildDate><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biography</title>
+      <link>/blogs/ipsum/</link>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
+      
+      <guid>/blogs/ipsum/</guid>
+      <description>Christopher Tranquille Christopher Tranquille is a 23 year-old student current reading for a Masters in Financial Analysis at London Business School. The following biography will include a brief history on his early life (1996 - 2016) and professional life (2016 onwards).
+Early life Christopher Tranquille grew up in a small town in the Netherlands called Lisse, well known for its flowers gardens &amp;ldquo;Het Keukenhof&amp;rdquo;. Christopher always had a strong affinity for physics, mathematics and engineering and he had a passion for music.</description>
+    </item>
+    
     <item>
       <title>Aliquam</title>
       <link>/blogs/aliquam/</link>
@@ -32,15 +42,6 @@
       
       <guid>/blogs/magna/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Ipsum</title>
-      <link>/blogs/ipsum/</link>
-      <pubDate>Tue, 31 Oct 2017 21:28:43 -0500</pubDate>
-      
-      <guid>/blogs/ipsum/</guid>
-      <description>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</description>
     </item>
     
     <item>
