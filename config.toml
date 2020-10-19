@@ -98,19 +98,19 @@ disqusShortname = ""
     
       [[params.tiles.showcase]]
       title = "Youth Risk Behavior Surveillance"
-      subtitle = "Data analysis"
+      subtitle = "Data Analysis"
       image = "pic03.jpg"
       url = "blogs/magna"
     
     [[params.tiles.showcase]]
-      title = "Aliquam"
-      subtitle = "Ipsum Dolor Sit Amet"
+      title = "Climate change and temperature anomalies"
+      subtitle = "Data Analysis"
       image = "pic01.jpg"
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
-      title = "Tempus"
-      subtitle = "Feugiat Amet Tempus"
+      title = "Yield Curve inversion"
+      subtitle = "Data Analysis"
       image = "pic02.jpg"
       url = "blogs/tempus"
 

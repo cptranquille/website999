@@ -18,12 +18,23 @@ Early life Christopher Tranquille grew up in a small town in the Netherlands cal
     </item>
     
     <item>
-      <title>Aliquam</title>
+      <title>Climate change and temperature anomalies</title>
       <link>/blogs/aliquam/</link>
       <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
       
       <guid>/blogs/aliquam/</guid>
-      <description></description>
+      <description>Climate change and temperature anomaliesWe are going to study climate change and temperature anomalies. We get data of Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies in the Northern Hemisphere at NASA’s Goddard Institute for Space Studies, and the tabular data of temperature anomalies
+Data initialization and manipulationweather &amp;lt;- read_csv(&amp;quot;https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv&amp;quot;, skip = 1, na = &amp;quot;***&amp;quot;)Notice that, when using this function, we added two options: skip and na.</description>
+    </item>
+    
+    <item>
+      <title>Yield Curve inversion</title>
+      <link>/blogs/tempus/</link>
+      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      
+      <guid>/blogs/tempus/</guid>
+      <description>Yield Curve inversionEvery so often, we hear warnings from commentators on the “inverted yield curve” and its predictive power with respect to recessions. An explainer what a inverted yield curve is can be found here. If you’d rather listen to something, here is a great podcast from NPR on yield curve indicators
+In addition, many articles and commentators think that, e.g., Yield curve inversion is viewed as a harbinger of recession.</description>
     </item>
     
     <item>
@@ -34,15 +45,6 @@ Early life Christopher Tranquille grew up in a small town in the Netherlands cal
       <guid>/blogs/magna/</guid>
       <description>Every two years, the Centers for Disease Control and Prevention conduct the Youth Risk Behavior Surveillance System (YRBSS) survey, where it takes data from high schoolers (9th through 12th grade), to analyze health patterns. We will work with a selected group of variables from a random sample of observations during one of the years the YRBSS was conducted.
 Load the dataThis data is part of the openintro textbook and we can load and inspect it.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/blogs/blog3/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/blogs/blog3/</guid>
-      <description></description>
     </item>
     
   </channel>

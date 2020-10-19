@@ -3,12 +3,12 @@ categories:
 - ""
 - ""
 date: "2017-10-31T22:26:13-05:00"
-description: Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.
+description: Data analysis of yield curve inversion
 draft: false
 image: pic08.jpg
 keywords: ""
 slug: tempus
-title: Tempus
+title: Yield Curve inversion
 ---
 
 ```{r, setup, echo=FALSE}
@@ -44,7 +44,7 @@ library(tidyquant)
 ```
 
 
-# Challenge 1: Yield Curve inversion
+# Yield Curve inversion
 
 Every so often, we hear warnings from commentators on the "inverted yield curve" and its predictive power with respect to recessions. An explainer what a [inverted yield curve is can be found here](https://www.reuters.com/article/us-usa-economy-yieldcurve-explainer/explainer-what-is-an-inverted-yield-curve-idUSKBN1O50GA). If you'd rather listen to something, here is a great podcast from [NPR on yield curve indicators](https://www.podbean.com/media/share/dir-4zgj9-6aefd11)
 
@@ -52,15 +52,14 @@ In addition, many articles and commentators think that, e.g., [*Yield curve inve
 
 
 ```{r yield_curve_parable.jpg, echo=FALSE, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve_parable.jpg"), error = FALSE)
+# knitr::include_graphics(here::here("images", "yield_curve_parable.jpg"), error = FALSE)
 ```
 
-In our case we will look at US data and use the [FRED database](https://fred.stlouisfed.org/) to download historical yield curve rates, and plot the yield curves since 1999 to see when the yield curves flatten. If you want to know more, a very nice article that explains the [yield curve is and its inversion can be found here](https://fredblog.stlouisfed.org/2018/10/the-data-behind-the-fear-of-yield-curve-inversions/). At the end of this chllenge you should produce this chart
+In our case we will look at US data and use the [FRED database](https://fred.stlouisfed.org/) to download historical yield curve rates, and plot the yield curves since 1999 to see when the yield curves flatten. More usefull information can be found in this article that explains the [yield curve is and its inversion](https://fredblog.stlouisfed.org/2018/10/the-data-behind-the-fear-of-yield-curve-inversions/). 
 
 ```{r yield_curve_challenge, echo=FALSE, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve_challenge.png"), error = FALSE)
+# knitr::include_graphics(here::here("images", "yield_curve_challenge.png"), error = FALSE)
 ```
-
 
 First, we will use the `tidyquant` package to download monthly rates for different durations. 
 
@@ -125,12 +124,11 @@ yield_curve <-left_join(df,mylookup,by="symbol")
 
 ## Plotting the yield curve
 
-This may seem long but it should be easy to produce the following three plots
 
 ### Yields on US rates by duration since 1960
 
 ```{r yield_curve_1, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve1.png"), error = FALSE)
+# knitr::include_graphics(here::here("images", "yield_curve1.png"), error = FALSE)
 ```
 
 ```{r,fig.height=8,fig.width=10}
@@ -164,7 +162,7 @@ yield_curve %>%
 
 
 ```{r yield_curve_2, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve2.png"), error = FALSE)
+# knitr::include_graphics(here::here("images", "yield_curve2.png"), error = FALSE)
 ```
 
 ```{r,fig.width=10,fig.height=10}
@@ -190,7 +188,7 @@ yield_curve %>%
 ### 3-month and 10-year yields since 1999
 
 ```{r yield_curve_3, out.width="100%"}
-knitr::include_graphics(here::here("images", "yield_curve3.png"), error = FALSE)
+# knitr::include_graphics(here::here("images", "yield_curve3.png"), error = FALSE)
 ```
 
 ```{r,fig.width=10}
@@ -214,10 +212,6 @@ ggplot(yield_selected,aes(x=date,y=price,colour=var))+
 
 
 ```
-
-
-According to [Wikipedia's list of recession in the United States](https://en.wikipedia.org/wiki/List_of_recessions_in_the_United_States), since 1999 there have been two recession in the US: between Mar 2001–Nov 2001 and between Dec 2007–June 2009. Does the yield curve seem to flatten before these recessions? Can a yield curve flattening really mean a recession is coming in the US? Since 1999, when did short-term (3 months) yield more than longer term (10 years) debt?
-
 
 
 Besides calculating the spread (10year - 3months), there are a few things we need to do to produce our final plot
