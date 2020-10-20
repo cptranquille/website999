@@ -2,8 +2,8 @@
 categories:
 - ""
 - ""
-date: "2017-10-31T22:26:13-05:00"
-description: Data analysis of yield curve inversion
+date: "2020-10-20T21:28:43-05:00"
+description: Data analysis of yield curve inversion using historical data
 draft: false
 image: pic08.jpg
 keywords: ""
@@ -124,6 +124,7 @@ yield_curve <-left_join(df,mylookup,by="symbol")
 
 ## Plotting the yield curve
 
+We now make 3 informative yield curve plots.
 
 ### Yields on US rates by duration since 1960
 

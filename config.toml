@@ -33,7 +33,7 @@ disqusShortname = ""
   # 404 error customization
   [params.error404]
     heading = "Page couldn't be found"
-    text = "Please visit [this page](/)"
+    text = "Please visit [the home page](https://cptranquille2021.netlify.app/)"
 
   # Navigation Section
   [params.navigation]
@@ -99,19 +99,19 @@ disqusShortname = ""
       [[params.tiles.showcase]]
       title = "Youth Risk Behavior Surveillance"
       subtitle = "Data Analysis"
-      image = "pic03.jpg"
+      image = "medical-01.jpg"
       url = "blogs/magna"
     
     [[params.tiles.showcase]]
       title = "Climate change and temperature anomalies"
       subtitle = "Data Analysis"
-      image = "pic01.jpg"
+      image = "climate.jpg"
       url = "blogs/aliquam"
 
     [[params.tiles.showcase]]
       title = "Yield Curve inversion"
       subtitle = "Data Analysis"
-      image = "pic02.jpg"
+      image = "stocks.jpg"
       url = "blogs/tempus"
 
 

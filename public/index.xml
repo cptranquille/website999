@@ -20,17 +20,17 @@ Early life Christopher Tranquille grew up in a small town in the Netherlands cal
     <item>
       <title>Climate change and temperature anomalies</title>
       <link>/blogs/aliquam/</link>
-      <pubDate>Tue, 31 Oct 2017 22:42:51 -0500</pubDate>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
       
       <guid>/blogs/aliquam/</guid>
       <description>Climate change and temperature anomaliesWe are going to study climate change and temperature anomalies. We get data of Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies in the Northern Hemisphere at NASA’s Goddard Institute for Space Studies, and the tabular data of temperature anomalies
-Data initialization and manipulationweather &amp;lt;- read_csv(&amp;quot;https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv&amp;quot;, skip = 1, na = &amp;quot;***&amp;quot;)Notice that, when using this function, we added two options: skip and na.</description>
+Data initialization and manipulationweather &amp;lt;- read_csv(&amp;quot;https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv&amp;quot;, skip = 1, na = &amp;quot;***&amp;quot;)For each month and year, the dataframe shows the deviation of temperature from the normal (expected).</description>
     </item>
     
     <item>
       <title>Yield Curve inversion</title>
       <link>/blogs/tempus/</link>
-      <pubDate>Tue, 31 Oct 2017 22:26:13 -0500</pubDate>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
       
       <guid>/blogs/tempus/</guid>
       <description>Yield Curve inversionEvery so often, we hear warnings from commentators on the “inverted yield curve” and its predictive power with respect to recessions. An explainer what a inverted yield curve is can be found here. If you’d rather listen to something, here is a great podcast from NPR on yield curve indicators
@@ -40,11 +40,11 @@ In addition, many articles and commentators think that, e.g., Yield curve invers
     <item>
       <title>Youth Risk Behavior Surveillance</title>
       <link>/blogs/magna/</link>
-      <pubDate>Tue, 31 Oct 2017 22:26:09 -0500</pubDate>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
       
       <guid>/blogs/magna/</guid>
       <description>Every two years, the Centers for Disease Control and Prevention conduct the Youth Risk Behavior Surveillance System (YRBSS) survey, where it takes data from high schoolers (9th through 12th grade), to analyze health patterns. We will work with a selected group of variables from a random sample of observations during one of the years the YRBSS was conducted.
-Load the dataThis data is part of the openintro textbook and we can load and inspect it.</description>
+Loading the dataThis data is part of the openintro textbook and we can load and inspect it.</description>
     </item>
     
     <item>

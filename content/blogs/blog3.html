@@ -2,8 +2,8 @@
 categories:
 - ""
 - ""
-date: "2017-10-31T22:26:13-05:00"
-description: Data analysis of yield curve inversion
+date: "2020-10-20T21:28:43-05:00"
+description: Data analysis of yield curve inversion using historical data
 draft: false
 image: pic08.jpg
 keywords: ""
@@ -137,6 +137,7 @@ glimpse(df)</code></pre>
 <pre class="r"><code>yield_curve &lt;-left_join(df,mylookup,by=&quot;symbol&quot;) </code></pre>
 <div id="plotting-the-yield-curve" class="section level2">
 <h2>Plotting the yield curve</h2>
+<p>We now make 3 informative yield curve plots.</p>
 <div id="yields-on-us-rates-by-duration-since-1960" class="section level3">
 <h3>Yields on US rates by duration since 1960</h3>
 <pre class="r"><code># knitr::include_graphics(here::here(&quot;images&quot;, &quot;yield_curve1.png&quot;), error = FALSE)</code></pre>

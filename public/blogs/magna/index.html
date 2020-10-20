@@ -87,9 +87,9 @@
 
 
 <p><em>Every two years, the Centers for Disease Control and Prevention conduct the <a href="https://www.cdc.gov/healthyyouth/data/yrbs/index.htm">Youth Risk Behavior Surveillance System (YRBSS)</a> survey, where it takes data from high schoolers (9th through 12th grade), to analyze health patterns. We will work with a selected group of variables from a random sample of observations during one of the years the YRBSS was conducted.</em></p>
-<div id="load-the-data" class="section level2">
-<h2>Load the data</h2>
-<p>This data is part of the <code>openintro</code> textbook and we can load and inspect it. There are observations on 13 different variables, some categorical and some numerical. The meaning of each variable can be found by bringing up the help file:</p>
+<div id="loading-the-data" class="section level2">
+<h2>Loading the data</h2>
+<p>This data is part of the <code>openintro</code> textbook and we can load and inspect it. There are observations on 13 different variables, some categorical and some numerical.</p>
 <pre class="r"><code>data(yrbss)
 glimpse(yrbss)</code></pre>
 <pre><code>## Rows: 13,583
@@ -107,11 +107,10 @@ glimpse(yrbss)</code></pre>
 ## $ hours_tv_per_school_day  &lt;chr&gt; &quot;5+&quot;, &quot;5+&quot;, &quot;5+&quot;, &quot;2&quot;, &quot;3&quot;, &quot;5+&quot;, &quot;5+&quot;, &quot;5...
 ## $ strength_training_7d     &lt;int&gt; 0, 0, 0, 0, 1, 0, 2, 0, 3, 0, 3, 0, 0, 7, ...
 ## $ school_night_hours_sleep &lt;chr&gt; &quot;8&quot;, &quot;6&quot;, &quot;&lt;5&quot;, &quot;6&quot;, &quot;9&quot;, &quot;8&quot;, &quot;9&quot;, &quot;6&quot;, &quot;...</code></pre>
-<p>Before you carry on with your analysis, it’s always a good idea to check with <code>skimr::skim()</code> to get a feel for missing values, summary statistics of numerical variables, and a very rough histogram.</p>
 </div>
 <div id="exploratory-data-analysis" class="section level2">
 <h2>Exploratory Data Analysis</h2>
-<p>You will first start with analyzing the <code>weight</code> of participants in kilograms. Using visualization and summary statistics, describe the distribution of weights. How many observations are we missing weights from?</p>
+<p>We first start with analyzing the <code>weight</code> of participants in kilograms. Using visualization and summary statistics, we analyse the distribution of weights and how many observations we are missing weights from.</p>
 <pre class="r"><code># Check with `skimr::skim()` to get a feel for missing values
 skim(yrbss$weight)</code></pre>
 <table>
@@ -214,8 +213,8 @@ yrbss %&gt;%
     labs(title=&quot;Distribution of weights by gender&quot;,
          y=NULL)</code></pre>
 <p><img src="/blogs/blog2_files/figure-html/eda_on_weight-1.png" width="648" style="display: block; margin: auto;" /></p>
-<p>Next, consider the possible relationship between a high schooler’s weight and their physical activity. Plotting the data is a useful first step because it helps us quickly visualize trends, identify strong associations, and develop research questions.</p>
-<p>Let’s create a new variable <code>physical_3plus</code>, which will be <code>yes</code> if they are physically active for at least 3 days a week, and <code>no</code> otherwise.</p>
+<p>Next, we consider the possible relationship between a high schooler’s weight and their physical activity. Plotting the data is a useful first step because it helps us quickly visualize trends, identify strong associations, and develop research questions.</p>
+<p>We create a new variable <code>physical_3plus</code>, which will be <code>yes</code> if they are physically active for at least 3 days a week, and <code>no</code> otherwise.</p>
 <pre class="r"><code># Create a new variable `physical_3plus` equal to `yes` if they are phycially active for at least 3 days a week, and `no` otherwise
 yrbss &lt;- yrbss %&gt;% 
   mutate(physical_3plus = ifelse(physically_active_7d &gt;= 3, &quot;yes&quot;, &quot;no&quot;))
@@ -229,7 +228,7 @@ yrbss %&gt;% filter(!is.na(physical_3plus)) %&gt;%
 ##   &lt;chr&gt;          &lt;int&gt; &lt;dbl&gt;
 ## 1 no              4404 0.331
 ## 2 yes             8906 0.669</code></pre>
-<p>Can you provide a 95% confidence interval for the population proportion of high schools that are <em>NOT</em> active 3 or more days per week?</p>
+<p>We now provide a 95% confidence interval for the population proportion of high schools that are <em>NOT</em> active 3 or more days per week.</p>
 <pre class="r"><code>yrbss %&gt;%
   
   # Since we are going to conpute the 95% CI for the proportion of students that are NOT active, we create a new variable bool equals to 1 if `physical_3plus` is &quot;no&quot;
@@ -250,7 +249,7 @@ yrbss %&gt;% filter(!is.na(physical_3plus)) %&gt;%
 ##     Obs  mean std_dev      se  CI_5 CI_95
 ##   &lt;int&gt; &lt;dbl&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt; &lt;dbl&gt;
 ## 1 13583 0.324   0.468 0.00402 0.316 0.332</code></pre>
-<p>Make a boxplot of <code>physical_3plus</code> vs. <code>weight</code>. Is there a relationship between these two variables? What did you expect and why?</p>
+<p>We now make a boxplot of <code>physical_3plus</code> vs. <code>weight</code>.</p>
 <pre class="r"><code>yrbss %&gt;%
   na.omit() %&gt;%
   ggplot(aes(x=weight,y=physical_3plus))+
@@ -263,7 +262,7 @@ yrbss %&gt;% filter(!is.na(physical_3plus)) %&gt;%
 </div>
 <div id="confidence-interval" class="section level2">
 <h2>Confidence Interval</h2>
-<p>Boxplots show how the medians of the two distributions compare, but we can also compare the means of the distributions using either a confidence interval or a hypothesis test. Note that when we calculate the mean/SD, etc weight in these groups using the mean function, we must ignore any missing values by setting the <code>na.rm = TRUE</code>.</p>
+<p>Boxplots show how the medians of the two distributions compare, but we can also compare the means of the distributions using either a confidence interval or a hypothesis test. Note that when we calculate the mean/SD, etc weight in these groups using the mean function, we ignore any missing values by setting the <code>na.rm = TRUE</code>.</p>
 <pre class="r"><code>yrbss %&gt;%
   group_by(physical_3plus) %&gt;%
   filter(!is.na(physical_3plus)) %&gt;% 
@@ -286,7 +285,7 @@ yrbss %&gt;% filter(!is.na(physical_3plus)) %&gt;%
 </div>
 <div id="hypothesis-test-with-formula" class="section level2">
 <h2>Hypothesis test with formula</h2>
-<p>Write the null and alternative hypotheses for testing whether mean weights are different for those who exercise at least times a week and those who don’t.</p>
+<p>Here, we use the t.test function</p>
 <pre class="r"><code>t.test(weight ~ physical_3plus, data = yrbss)</code></pre>
 <pre><code>## 
 ##  Welch Two Sample t-test
@@ -319,8 +318,7 @@ yrbss %&gt;% filter(!is.na(physical_3plus)) %&gt;%
 <pre class="r"><code>ggplot(data = null_dist, aes(x = stat)) +
   geom_histogram()</code></pre>
 <p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-8-1.png" width="648" style="display: block; margin: auto;" /></p>
-<p>Now that the test is initialized and the null distribution formed, we can visualise to see how many of these null permutations have a difference of at least <code>obs_stat</code> of 1.77?</p>
-<p>We can also calculate the p-value for your hypothesis test using the function <code>infer::get_p_value()</code>.</p>
+<p>Now that the test is initialized and the null distribution formed, we can visualise to see how many of these null permutations have a difference of at least <code>obs_stat</code> of 1.77. We can also calculate the p-value for your hypothesis test using the function <code>infer::get_p_value()</code>.</p>
 <pre class="r"><code>null_dist %&gt;% visualize() +
   shade_p_value(obs_stat = obs_diff, direction = &quot;two-sided&quot;)</code></pre>
 <p><img src="/blogs/blog2_files/figure-html/unnamed-chunk-9-1.png" width="648" style="display: block; margin: auto;" /></p>
