@@ -5,7 +5,7 @@ categories:
 date: "2020-10-20T21:28:43-05:00"
 description: Data analysis of yield curve inversion using historical data
 draft: false
-image: pic08.jpg
+image: yieldcurve.jpg
 keywords: ""
 slug: tempus
 title: Yield Curve inversion
@@ -43,8 +43,6 @@ library(openintro)
 library(tidyquant)
 ```
 
-
-# Yield Curve inversion
 
 Every so often, we hear warnings from commentators on the "inverted yield curve" and its predictive power with respect to recessions. An explainer what a [inverted yield curve is can be found here](https://www.reuters.com/article/us-usa-economy-yieldcurve-explainer/explainer-what-is-an-inverted-yield-curve-idUSKBN1O50GA). If you'd rather listen to something, here is a great podcast from [NPR on yield curve indicators](https://www.podbean.com/media/share/dir-4zgj9-6aefd11)
 

@@ -48,16 +48,9 @@ disqusShortname = ""
       url = "#"
 
     [[params.navigation.links]]
-      name = "Blogs"
+      name = "View my work"
       url = "blogs"
 
-    [[params.navigation.links]]
-      name = "Generic Blog"
-      url = "blogs/ipsum"
-
-    [[params.navigation.links]]
-      name = "Elements"
-      url = "elements.html"
 
     # Add custom links here by uncommenting code below. To remove links just delete
     # the [[params.navigation.links]] map associated with that link. Copy and paste
@@ -68,13 +61,8 @@ disqusShortname = ""
 
     # Button Style 1
     [[params.navigation.button1]]
-      name = "Get Started"
-      url = "blogs"
-
-    # Button Style 2
-    [[params.navigation.button2]]
-      name = "Log In"
-      url = "#"
+      name = "View my CV"
+      url = "cv"
 
 
   # Banner section
@@ -95,6 +83,12 @@ disqusShortname = ""
       subtitle = "A short description of my life"
       image = "myface.png"
       url = "blogs/ipsum"
+
+    [[params.tiles.showcase]]
+      title = "Climate change and temperature anomalies"
+      subtitle = "Data Analysis"
+      image = "climate.jpg"
+      url = "blogs/aliquam"
     
       [[params.tiles.showcase]]
       title = "Youth Risk Behavior Surveillance"
@@ -102,12 +96,6 @@ disqusShortname = ""
       image = "medical-01.jpg"
       url = "blogs/magna"
     
-    [[params.tiles.showcase]]
-      title = "Climate change and temperature anomalies"
-      subtitle = "Data Analysis"
-      image = "climate.jpg"
-      url = "blogs/aliquam"
-
     [[params.tiles.showcase]]
       title = "Yield Curve inversion"
       subtitle = "Data Analysis"
@@ -177,7 +165,7 @@ disqusShortname = ""
 
   # Footer section
   [params.footer]
-    enable = true
+    enable = false
     copyright = "Company Name"
 
     # Uses font awesome icons
