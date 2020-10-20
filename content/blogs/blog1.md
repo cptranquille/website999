@@ -24,7 +24,6 @@ After the first months of his studies in Aerospace Engineering, Christopher noti
 
 * Aerodynamics Engineering at the [Formula Student Team Delft](fsteamdelft.nl)
   * Focusing mainly on underbody and diffuser aerodynamics
-
 * Energy EMEA Intern at [ABN AMRO Bank](https://www.abnamro.com/nl/index.html) 
 * Investment Banking Intern  at [Houlihan Lokey](https://hl.com/)
 * Strategy Consulting intern at [Roland Berger](http://rolandberger.com/)
