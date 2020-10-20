@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Overview on Portfolio Website</title>
+    <link>/projects/</link>
+    <description>Recent content in Overview on Portfolio Website</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 31 Oct 2017 22:27:21 -0500</lastBuildDate><atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Biography</title>
+      <link>/projects/biography/</link>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
+      
+      <guid>/projects/biography/</guid>
+      <description>Christopher Tranquille Christopher Tranquille is a 23 year-old student current reading for a Masters in Financial Analysis at London Business School. The following biography will include a brief history on his early life (1996 - 2016) and professional life (2016 onwards).
+Early life Christopher Tranquille grew up in a small town in the Netherlands called Lisse, well known for its flowers gardens &amp;ldquo;Het Keukenhof&amp;rdquo;. Christopher always had a strong affinity for physics, mathematics and engineering and he had a passion for music.</description>
+    </item>
+    
+    <item>
+      <title>Climate change and temperature anomalies</title>
+      <link>/projects/ccata/</link>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
+      
+      <guid>/projects/ccata/</guid>
+      <description>Climate change and temperature anomaliesWe are going to study climate change and temperature anomalies. We get data of Combined Land-Surface Air and Sea-Surface Water Temperature Anomalies in the Northern Hemisphere at NASA’s Goddard Institute for Space Studies, and the tabular data of temperature anomalies
+Data initialization and manipulationweather &amp;lt;- read_csv(&amp;quot;https://data.giss.nasa.gov/gistemp/tabledata_v3/NH.Ts+dSST.csv&amp;quot;, skip = 1, na = &amp;quot;***&amp;quot;)For each month and year, the dataframe shows the deviation of temperature from the normal (expected).</description>
+    </item>
+    
+    <item>
+      <title>Yield Curve Inversion</title>
+      <link>/projects/yci/</link>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
+      
+      <guid>/projects/yci/</guid>
+      <description>Every so often, we hear warnings from commentators on the “inverted yield curve” and its predictive power with respect to recessions. An explainer what a inverted yield curve is can be found here. If you’d rather listen to something, here is a great podcast from NPR on yield curve indicators
+In addition, many articles and commentators think that, e.g., Yield curve inversion is viewed as a harbinger of recession.</description>
+    </item>
+    
+    <item>
+      <title>Youth Risk Behavior Surveillance</title>
+      <link>/projects/yrbss/</link>
+      <pubDate>Tue, 20 Oct 2020 21:28:43 -0500</pubDate>
+      
+      <guid>/projects/yrbss/</guid>
+      <description>Every two years, the Centers for Disease Control and Prevention conduct the Youth Risk Behavior Surveillance System (YRBSS) survey, where it takes data from high schoolers (9th through 12th grade), to analyze health patterns. We will work with a selected group of variables from a random sample of observations during one of the years the YRBSS was conducted.
+Loading the dataThis data is part of the openintro textbook and we can load and inspect it.</description>
+    </item>
+    
+  </channel>
+</rss>

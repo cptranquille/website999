@@ -7,7 +7,7 @@ description: Data analysis of youth health patterns
 draft: false
 image: youth_weight.jpg
 keywords: ""
-slug: magna
+slug: yrbss
 title: Youth Risk Behavior Surveillance
 ---
 

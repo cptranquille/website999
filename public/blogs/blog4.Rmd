@@ -7,7 +7,7 @@ description: Data analysis of climate change and the corresponding temperature a
 draft: false
 image: ice.jpg
 keywords: ""
-slug: aliquam
+slug: ccata
 title:  Climate change and temperature anomalies 
 ---
 

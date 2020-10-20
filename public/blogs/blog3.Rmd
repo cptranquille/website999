@@ -7,8 +7,8 @@ description: Data analysis of yield curve inversion using historical data
 draft: false
 image: yieldcurve.jpg
 keywords: ""
-slug: tempus
-title: Yield Curve inversion
+slug: yci
+title: Yield Curve Inversion
 ---
 
 ```{r, setup, echo=FALSE}
