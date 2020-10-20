@@ -1,9 +1,3 @@
 # website999
 
-Hi
-
-*italics*
-
-**bold**
-
-Hello world, how are you today?!!
+Nothing interesting to say here.
